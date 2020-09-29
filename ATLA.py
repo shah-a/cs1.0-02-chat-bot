@@ -1,3 +1,9 @@
+# Bismillah al-Rahmaan al-Raheem
+# Ali Shah | Sept. 27, 2020
+# CS1.0 Assignment 2: Chat Bot
+
+# This program ... 
+
 from random import choice
 
 def get_bot_response(user_response):
