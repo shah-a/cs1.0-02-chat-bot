@@ -2,7 +2,7 @@
 # Ali Shah | Sept. 27, 2020
 # CS1.0 Assignment 2: Chat Bot
 
-""" This program ... """
+''' This program ... '''
 
 from random import choice
 
@@ -32,14 +32,14 @@ def get_bot_response(response):
 
     # Response set 4 for Uncle Iroh
     iroh = [
-        "\"Pride is not the opposite of shame, but its source.\n\
-        True humility is the only antidote to shame.\"",  # S2E9
+        "\"Pride is not the opposite of shame, but its source.\n"
+        "True humility is the only antidote to shame.\"",  # S2E9
 
-        "\"It is usually best to admit mistakes when they occur, \
-        and seek to restore honor.\"",  # S2E15
+        "\"It is usually best to admit mistakes when they occur,\n"
+        "and seek to restore honor.\"",  # S2E15
 
-        "\"You can't always see the light at the end of the tunnel,\n\
-        but if you just keep moving, you will come to a better place.\""  # 2E20
+        "\"You can't always see the light at the end of the tunnel,\n"
+        "but if you just keep moving, you will come to a better place.\""  # 2E20
     ]
 
     # Response set 5 for Cabbage Merchant
@@ -70,9 +70,9 @@ print('Hey :D! Welcome to the Avatar quote bot!\nEnter "done" to quit the progra
 while True:  # Infinite loop; only breaks when user inputs "done"
 
     user_response = input(
-        "Tell me about a character you like from Avatar: The Last Airbender!\n\
-        Be as detailed (or not!) as you like.\n\
-        If I recognize the character, I'll share one of their quotes: "
+        "Tell me about a character you like from Avatar: The Last Airbender!\n"
+        "Be as detailed (or not!) as you like.\n"
+        "If I recognize the character, I'll share one of their quotes: "
     )
 
     if user_response == "done":
