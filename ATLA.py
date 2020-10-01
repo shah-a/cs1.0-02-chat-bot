@@ -69,9 +69,11 @@ print('Hey :D! Welcome to the Avatar quote bot!\nEnter "done" to quit the progra
 
 while True:  # Infinite loop; only breaks when user inputs "done"
 
-    user_response = input("Tell me about a character you like from Avatar: The Last Airbender!\n\
-    Be as detailed (or not!) as you like.\n\
-    If I recognize the character, I'll share one of their quotes: ")
+    user_response = input(
+        "Tell me about a character you like from Avatar: The Last Airbender!\n\
+        Be as detailed (or not!) as you like.\n\
+        If I recognize the character, I'll share one of their quotes: "
+    )
 
     if user_response == "done":
         print("\nBye! Thanks for coming!\n")
