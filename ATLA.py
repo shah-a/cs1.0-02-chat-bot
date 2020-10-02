@@ -71,9 +71,8 @@ def get_bot_response(response):
         return f"Uncle Iroh says:\n{choice(iroh)}"
     elif "Cabbage" in response or "cabbage" in response:
         return f"The Cabbage Merchant says:\n{choice(cabbage)}"
-
-    # Return default statement when user input is unrecognized
-    return f"Hmm... I don't have any quotes for {response}"
+    else:  # Return default statement when user input is unrecognized
+        return f"Hmm... I don't have any quotes for {response}"
 
 print('Hey :D! Welcome to the Avatar quote bot!\nEnter "done" to quit the program.\n')
 
