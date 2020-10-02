@@ -2,12 +2,22 @@
 # Ali Shah | Sept. 27, 2020
 # CS1.0 Assignment 2: Chat Bot
 
-''' This program ... '''
+"""
+Avatar: The Last Airbender quote bot
+
+This is a chat bot that returns quotes to the user based on
+their string inputs. Quotes are randomly chosen from lists containing
+three quotes per character.
+
+Program loops indefinitely, returning quotes based on user input until
+user inputs keyword 'done'.
+"""
 
 from random import choice
 
+
 def get_bot_response(response):
-    """ testing """
+    """Returns a randomly selected quote from a character based on user input."""
 
     # Response set 1 for Aang
     aang = [
@@ -39,7 +49,7 @@ def get_bot_response(response):
         "and seek to restore honor.\"",  # S2E15
 
         "\"You can't always see the light at the end of the tunnel,\n"
-        "but if you just keep moving, you will come to a better place.\""  # 2E20
+        "but if you just keep moving, you will come to a better place.\""  # S2E20
     ]
 
     # Response set 5 for Cabbage Merchant
@@ -50,7 +60,7 @@ def get_bot_response(response):
     ]
 
     # Pseudorandom response chosen from a response set selected based on keyword from user
-    # Using "in" to check if keyword is present in user's inputted phrase
+    # "in" checks if keyword is present in user's inputted phrase
     if "Aang" in response or "aang" in response:
         return f"Aang says:\n{choice(aang)}"
     if "Katara" in response or "katara" in response:
@@ -79,4 +89,4 @@ while True:  # Infinite loop; only breaks when user inputs "done"
         print("\nBye! Thanks for coming!\n")
         break
 
-    print(f"\n{get_bot_response(user_response)}\n")  # Displays response message
+    print(f"\n{get_bot_response(user_response)}\n")  # Display response message
