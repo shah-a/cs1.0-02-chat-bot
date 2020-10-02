@@ -63,13 +63,13 @@ def get_bot_response(response):
     # "in" checks if keyword is present in user's inputted phrase
     if "Aang" in response or "aang" in response:
         return f"Aang says:\n{choice(aang)}"
-    if "Katara" in response or "katara" in response:
+    elif "Katara" in response or "katara" in response:
         return f"Katara says:\n{choice(katara)}"
-    if "Sokka" in response or "sokka" in response:
+    elif "Sokka" in response or "sokka" in response:
         return f"Sokka says:\n{choice(sokka)}"
-    if "Iroh" in response or "iroh" in response:
+    elif "Iroh" in response or "iroh" in response:
         return f"Uncle Iroh says:\n{choice(iroh)}"
-    if "Cabbage" in response or "cabbage" in response:
+    elif "Cabbage" in response or "cabbage" in response:
         return f"The Cabbage Merchant says:\n{choice(cabbage)}"
 
     # Return default statement when user input is unrecognized
